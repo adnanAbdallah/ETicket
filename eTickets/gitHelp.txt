@@ -1,0 +1,63 @@
+FIRST STEPS
+
+git init
+git config --global user.name "adnanAbdallah"
+git config --global user.email "adnan.ali.abdallah@gmail.com"
+git config --list 
+git init 
+
+git add .
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/adnanAbdallah/git_test.git
+git push -u origin master
+
+
+
+touch index.html
+git status 
+git add index.html  //this add still need the commit (on the stage)
+git rm --cached index.html  //to instage
+
+
+
+
+COMMIT:
+
+# commit a version
+git commit -m "message to commit"
+# get all commit
+git log  
+# move to a commit
+git checkout <hash-number>   
+
+
+
+
+
+BRANCH:
+
+# move to branch (here master)
+git checkout master 
+# create a branch
+git branch adnan 
+# switch to  branch
+git checkout {branch name}
+# delete a branch 
+git branch -D {branch name}
+# get all local branch
+git branch 
+
+
+
+
+
+REMOTE REPO:
+
+# add remote repo
+git remote add origin {repo_url}
+# change  remote repo
+git remote set-url origin {new_repo_url}
+# current remote repo
+git remote -v
+
